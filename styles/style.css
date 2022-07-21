@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color-primary : #03312E;
+    --color-primary-variant : #549F93;
+    --color-white : #fff;
+    
+    --color-light : rgba(255,255,255,0.75);
+    --transition : 500ms linear;
+}
+header{
+    color: var(--color-white);
+    justify-content: space-around;
+}
+header nav{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1000;
+    transition: var(--transition);
+}
+.nav__scroll{
+    background-color: var(--color-light);
+    backdrop-filter: blur(15px);
+    color: var(--color-primary) !important;
+}
+.nav__scroll ul li a{
+    color: var(--color-primary);
+}
+header nav img{
+    height: 70%;
+    margin-right: 1rem;
+    transition: var(--transition);
+}
+header nav ul{
+    display: flex;
+    gap: 3rem;
+}
+header nav ul li a{
+    color: var(--color-white);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.header__content__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    /* background : linear-gradient(rgba(0,0,0,0,5),rgba(0,0,0,0,5)),url('../assets/sean-pollock-PhYq704ffdA-unsplash.jpg'); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/sean-pollock-PhYq704ffdA-unsplash.jpg');
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    height: 115vh;
+}
+.header__content__container img{
+    width: 15rem;
+}
+.header__content__container h2{
+    font-size: 2rem;
+}
+.header__content__container p{
+    text-align: center;
+    margin: 1rem 3rem;
+}
+.header__content__container .btn__container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.header__content__container .btn__container i{
+    margin-left: 0.4rem;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 4px;
+    color: white;
+    padding: 1rem 0;
+    min-width: 10rem;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    letter-spacing: 1px;
+}
+
+.btn__primary{
+    background-color: white;
+    color: #03312E;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.btn__primary:hover{
+    color: white;
+    letter-spacing: 4px;
+}
+
+
+.works__portion{
+    height: 100vh;
+}

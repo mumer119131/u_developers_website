@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DU Developer</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav_bar">
+            <img src="./assets/ud_logo_white.png" alt="" id="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header__content__container">
+            <img src="./assets/ud_logo_white.png" alt="">
+            <h2>U Developers</h2>
+            <p>"Turning your dreams into real homes. Best construction experts in town. We are committed to build homes with superior quality. Leave your dream home construction upon our shoulders."</p>
+            <div class="btn__container">
+                <a href="#" class="btn btn__primary">Hire</a>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="works__portion"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        var myNav = document.getElementById('nav_bar');
+        var logo = document.getElementById('logo');
+        window.onscroll = function () { 
+            "use strict";
+            if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+                myNav.classList.add("nav__scroll");
+                logo.setAttribute('src', "./assets/ud_logo_gradient.png");
+            }else {
+                logo.setAttribute('src', "./assets/ud_logo_white.png");
+                myNav.classList.remove("nav__scroll");
+            }
+        }
+    </script>
+</body>
+</html>
