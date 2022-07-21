@@ -20,6 +20,9 @@
     --color-light : rgba(255,255,255,0.75);
     --transition : 500ms linear;
 }
+html{
+    scroll-behavior: smooth;
+}
 header{
     color: var(--color-white);
     justify-content: space-around;
@@ -296,7 +299,7 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
 }
 
 .brands__portion{
-    height: 30rem;
+    padding: 10rem 1rem;
 }
 .brands__container{
     margin-top: 2rem;
@@ -319,11 +322,18 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
 }
 .contact__container{
     margin-top: 2rem;
+    width: 25rem;
+}
+.contact__container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .contact__container input[type="text"]{
     display: block;
     margin-top: 1rem;
-    min-width: 25rem;
+    min-width: 90%;
     padding: 1rem 2rem;
     background-color: transparent;
     border: 1px solid var(--color-light);
@@ -336,9 +346,9 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
     letter-spacing: 1px;
 }
 .contact__container input[type="submit"]{
-    min-width: 25rem;
+    min-width: 90%;
     padding: 1rem 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 8px;
     letter-spacing: 2px;
     font-size: 1rem;
@@ -351,9 +361,6 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
     letter-spacing: 4px;
 }
 .contact__container label{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     margin-top: 1rem;
     font-weight: 300;
 }
@@ -361,9 +368,62 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
     accent-color: var(--color-primary);
 }
 
-footer{
+.footer__main{
     background-color: var(--color-primary);
-    height: 40rem;
+    padding: 4rem 1rem;
+    display: flex;
+    color: var(--color-white);
+}
+
+footer .footer__logo{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__logo img{
+    width: 10rem;
+}
+.footer__logo h2{
+    font-weight: 300;
+    margin-top: 1rem;
+}
+.footer__logo p{
+    font-weight: 100;
+}
+.footer__navigation{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+footer h2{
+    font-weight: 300;
+}
+footer ul li a{
+    color: var(--color-whites);
+    text-align: center;
+    font-weight: 100;
+    line-height: 2rem;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer__support{
+    flex-basis: 30%;
+}
+.footer__functions{
+    flex-basis: 30%;
+}
+
+.bottom__footer{
+    text-align: center;
+    background-color: black;
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    font-weight: 200;
 }
 /* ==================MEDIA QURIES (MEDIUM DEVICES)=============== */
 
@@ -388,5 +448,23 @@ footer{
     }
     .gallery__portion h2{
         margin-bottom: 15rem;
+    }
+    footer .footer__logo{
+        display: none;
+    }
+    footer h2{
+        font-size: 1rem;
+    }
+    footer ul li a{
+        font-size: 1rem;
+    }
+    .footer__navigation{
+        flex-basis: 33%;
+    }
+    .footer__support{
+        flex-basis: 33%;
+    }
+    .footer__functions{
+        flex-basis: 33%;
     }
 }
