@@ -199,7 +199,7 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
     margin-top: 2rem;
 }
 .team__member__container{
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 8px;
@@ -210,13 +210,15 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
 .team__container img{
     width: 16rem;
     border-radius: 8px;
-    filter: grayscale(50%);
+    filter: grayscale(70%);
 }
 .team__member__container h2{
     font-weight: 400;
     font-size: 1.7rem;
+    color: var(--color-primary);
 }
 .team__member__container p{
+    color: var(--color-primary);
     font-weight: 100;
 }
 
