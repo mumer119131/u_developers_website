@@ -199,18 +199,21 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
     margin-top: 2rem;
 }
 .team__member__container{
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.9);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    padding: 0.5rem 0.5rem 2rem;
+    padding: 1rem 1rem 2rem;
     text-align: center;
     color: var(--color-light);
 }
 .team__container img{
     width: 16rem;
-    border-radius: 8px;
+    border-radius: 50%;
     filter: grayscale(70%);
+    -webkit-box-shadow: 3px 3px 10px 3px #ddd;
+    -moz-box-shadow: 3px 3px 10px 3px #ddd;
+    box-shadow: 3px 3px 10px 3px #ddd;
 }
 .team__member__container h2{
     font-weight: 400;
@@ -219,10 +222,41 @@ box-shadow: 1px -2.5px 10.5px 2.5px #ddd;
 }
 .team__member__container p{
     color: var(--color-primary);
-    font-weight: 100;
+    font-weight: 300;
 }
-
-
+.team__member__container small{
+    color: var(--color-primary);
+    font-size: 0.9rem;
+}
+.team__btn__container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.message__btn{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 300;
+    transition: var(--transition);
+}
+.message__btn:hover{
+    background-color: var(--color-primary-variant);
+}
+.more__btn{
+    border: 1px solid var(--color-primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    color: var(--color-primary);
+    font-weight: 300;
+    transition: var(--transition);
+}
+.more__btn:hover{
+    background-color: var(--color-primary-variant);
+    color: var(--color-white);
+    border-color: var(--color-primary-variant);
+}
 .reviews__portion{
     padding: 10rem 1rem;
 }
@@ -393,6 +427,7 @@ footer .footer__logo{
 }
 .footer__logo p{
     font-weight: 100;
+    text-align: center;
 }
 .footer__navigation{
     flex-basis: 30%;
@@ -434,6 +469,9 @@ footer ul li a:hover{
     header nav ul{
         gap: 1rem;
     }
+    .footer__logo img{
+        width: 5rem;
+    }
 }
 
 /* ==================MEDIA QURIES (SMALL DEVICES)=============== */
@@ -468,5 +506,8 @@ footer ul li a:hover{
     }
     .footer__functions{
         flex-basis: 33%;
+    }
+    .team__portion{
+        clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
     }
 }
